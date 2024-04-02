@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noticia Text", serif;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100px;
+  background-color: white;
+}
+
+.header {
+  max-width: 1140px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 300px;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #326891;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 35px;
+  margin-top: 20px;
+  border-radius: 18px;
+}
+
+.banner {
+  height: calc(100vh - 100px);
+  background-image: url("../assets/imgs/capa.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.banner .banner-all {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .banner-area {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner h1 span {
+  color: black;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.default .section-desc {
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.default.light {
+  background-color: white;
+  color: #000;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+  color: #000;
+}
+
+.default.dark {
+  background-color: #050505;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+  color: #fff;
+}
+
+.section-posts {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.section-posts--text {
+  flex: 1;
+}
+
+.section-posts--text p {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.section-posts--img {
+  width: 520px;
+  text-align: center;
+}
+
+.section-posts--img img {
+  width: 480px;
+  height: 300px;
+  border: 2px solid white;
+}
+
+.default.light.contact {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[name="name"] {
+  margin-right: 20px;
+}
+
+form .button.contact {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.section-form input,
+form textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  min-width: 255px;
+  margin-top: 50px;
+}
+
+.section-form form input {
+  height: 30px;
+}
+
+.section-form form [placeholder="Mensagem"] {
+  min-width: 515px;
+  height: 24px;
+}
+
+input[name="name"] {
+  margin: 0;
+}
+
+.section-form form input::placeholder,
+.section-form form textarea::placeholder {
+  color: black;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.section-form form textarea {
+  resize: none;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.footer-info--center {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info--center p {
+  color: #7e7e7e;
+  text-align: justify;
+}
+
+.footer-info--center h3 {
+  font-weight: 700;
+}
+
+.footer-info--center h3 span {
+  font-weight: 200;
+}
+
+.footer-info--text {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
